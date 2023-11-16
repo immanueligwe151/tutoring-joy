@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Got the below line from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Welcome to Tutoring Joy</title>
   </head>
   <body>
@@ -15,11 +20,11 @@
         alt="logo for tutoring joy"
       />
       <h1>Tutoring Joy</h1>
-      <h6>Bringing back the joy of learning with tutoring</h6>
+      <h3>Bringing back the joy of learning with tutoring</h3>
       <nav>
         <a href="#about-us">About Us</a>
         <a href="#our-packages">Our Packages</a>
-        <a href="#">Contact Us</a>
+        <a href="#contact-us">Contact Us</a>
       </nav>
     </header>
     <section id="about-us">
@@ -46,13 +51,28 @@
           id="picture-2"
         />
         <h3>Our Offered Packages</h3>
-        <p>
-          We have a very wide range of tutoring packages, for various ages of
-          primary school aged children, as well as high school aged children as
-          well. Our packages range from one-on-one tutoring to small groups of
-          5-8 pupils.
-        </p>
+        <div>
+          <p>
+            We have a very wide selection of different packages. We offer
+            tutoring coming in one-on-one sessions or group sessions, with no
+            more than 8 pupils in a group. One-on-one tuition is done at the
+            home of the pupil, with the express presence of at least one
+            guardian/responsible adult. Our group sessions are normally held in
+            hired rooms from various venues, which would be confirmed upon
+            booking.
+          </p>
+          <br />
+          <p>
+            Our tutoring is perfect for children of primary and high school,
+            ranging from ages 5-16. We offer assistance in academic work,
+            homework, and giving extra academic support for children who
+            struggle with things learned in class. We also offer special
+            packages to help with SATs and GCSE preparation for those pupils
+            sitting these exams.
+          </p>
+        </div>
       </div>
+
       <br />
       <p>
         Interested in exploring our package options? Fill out the form below and
@@ -60,18 +80,63 @@
       </p>
       <form id="explore-package">
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required="true" />
         <br />
         <label for="name-child">Your Child's Name</label>
-        <input type="text" id="name-child" name="name-child" />
+        <input type="text" id="name-child" name="name-child" required="true" />
         <br />
-        <label for="name-child" id="multiple-children"
-          >If you have more than one child in need of tutoring, put both their
-          names in the box above, seperated by commas.</label
-        >
+        <p id="multiple-children">
+          If you have more than one child in need of tutoring, put both their
+          names in the box above, seperated by commas.
+        </p>
         <br />
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" required="true" />
+        <br />
+        <label for="number">Your Phone Number</label>
+        <input type="tel" id="number" name="number" required="true" />
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset Form" />
       </form>
     </section>
-    <footer></footer>
+    <footer id="contact-us">
+      <h3>Contact us</h3>
+      <div>
+        <h5>Like to speak to a representative? Want to find out more?</h5>
+        <span>
+          <p>Call us on 0330 457 2873</p>
+          <p>Email us at enquiries@tutoringjoy.co.uk</p>
+        </span>
+      </div>
+      <br />
+      <div>
+        <h5>Or send us a letter in the post at the following address:</h5>
+        <p>Tutoring Joy</p>
+        <p>25 Endwhistle Street</p>
+        <p>Croydon CR0 3SL</p>
+      </div>
+      <br />
+      <div>
+        <h5>Check us out on social media</h5>
+        <span>
+          <a
+            href="https://www.facebook.com"
+            class="fa fa-facebook"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.twitter.com"
+            class="fa fa-twitter"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            class="fa fa-instagram"
+            target="_blank"
+          ></a>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
