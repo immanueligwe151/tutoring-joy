@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+header {
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+/*this is to make the font consistent throughout the webpage*/
+body {
+    font-family: 'Roboto', normal;
+    margin: 15px;
+}
+
+#tj-logo {
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    text-align: center;
+}
+
+div {
+    line-height: 20px;
+    /*this rule will be applied to all divs except where it is overwritten by other div rules*/
+}
+
+.header-div {
+    padding: 14px 8px 10px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+nav {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: thick double black;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+a:hover {
+    color: rgb(245, 45, 45);
+}
+
+#picture-1 {
+    width: 60%;
+    height: 60%;
+    max-width: 575px;
+}
+
+/*this has been done so that the text stays to the right of the picture in larger screens, and to the bottom of the picture on lower screens*/
+#about-us {
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#picture-2 {
+    width: 60%;
+    max-width: 600px;
+}
+
+#our-packages {
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.text-blocks {
+    max-width: 680px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #55ACEE;
+}
+
+.form-input {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 2px solid black;
+    font-size: medium;
+}
+
+.form-button {
+    padding: 5px 12px 5px 12px;
+    font-size: normal;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.form-button:hover {
+    background-color: blue;
+}
+
+label {
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+#contact-us-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}

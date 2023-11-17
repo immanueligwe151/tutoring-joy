@@ -9,22 +9,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Welcome to Tutoring Joy</title>
   </head>
   <body>
     <header>
-      <!--This image was created by myself as the logo for Tutoring Joy-->
-      <img
-        id="tj-logo"
-        src="assets/images/tutoring-joy-logo.png"
-        alt="logo for tutoring joy"
-      />
-      <h1>Tutoring Joy</h1>
-      <h3>Bringing back the joy of learning with tutoring</h3>
+      <div class="header-div">
+        <!--This image was created by myself as the logo for Tutoring Joy-->
+        <img
+          id="tj-logo"
+          src="assets/images/tutoring-joy-logo.png"
+          alt="logo for tutoring joy"
+        />
+        <div>
+          <h1 class="headings">Tutoring Joy</h1>
+          <h3>Bringing back the joy of learning with tutoring</h3>
+        </div>
+      </div>
       <nav>
-        <a href="#about-us">About Us</a>
-        <a href="#our-packages">Our Packages</a>
-        <a href="#contact-us">Contact Us</a>
+        <a href="#about-us" class="nav-anchor">About Us</a>
+        <a href="#our-packages" class="nav-anchor">Our Packages</a>
+        <a href="#sign-up" class="nav-anchor">Sign Up</a>
+        <a href="#contact-us" class="nav-anchor">Contact Us</a>
       </nav>
     </header>
     <section id="about-us">
@@ -34,22 +40,25 @@
         alt="a teacher explaining things to a group of students"
         id="picture-1"
       />
-      <h3>Welcome to Tutoring Joy</h3>
-      <p>
-        We are Tutoring Joy, a tutoring group with an aim towards helping kids
-        excel academically. We provide extra support for children who are
-        struggling with class content, and are struggling to get the assistance
-        that they need from their schools. We are also here for those who desire
-        some additional curricular input outside of school hours.
-      </p>
+      <div class="text-blocks">
+        <h3>Welcome to Tutoring Joy</h3>
+        <p>
+          We are Tutoring Joy, a tutoring group with an aim towards helping kids
+          excel academically. We provide extra support for children who are
+          struggling with class content, and are struggling to get the
+          assistance that they need from their schools. We are also here for
+          those who desire some additional curricular input outside of school
+          hours.
+        </p>
+      </div>
     </section>
     <section id="our-packages">
-      <div>
-        <img
-          src="assets/images/picture-2.jpg"
-          alt="a teacher and a classroom"
-          id="picture-2"
-        />
+      <img
+        src="assets/images/picture-2.jpg"
+        alt="a teacher and a classroom"
+        id="picture-2"
+      />
+      <div class="text-blocks">
         <h3>Our Offered Packages</h3>
         <div>
           <p>
@@ -61,7 +70,6 @@
             hired rooms from various venues, which would be confirmed upon
             booking.
           </p>
-          <br />
           <p>
             Our tutoring is perfect for children of primary and high school,
             ranging from ages 5-16. We offer assistance in academic work,
@@ -72,51 +80,70 @@
           </p>
         </div>
       </div>
-
-      <br />
+    </section>
+    <section id="sign-up">
+      <h3>Sign Up</h3>
       <p>
         Interested in exploring our package options? Fill out the form below and
         one of us will get in touch with you!
       </p>
-      <form id="explore-package">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required="true" />
+      <form
+        id="explore-package"
+        method="POST"
+        action="https://formdump.codeinstitute.net/"
+      >
+        <label for="name">Your Name </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required="true"
+          class="form-input"
+        />
         <br />
-        <label for="name-child">Your Child's Name</label>
-        <input type="text" id="name-child" name="name-child" required="true" />
+        <label for="name-child">Your Child's Name </label>
+        <input
+          type="text"
+          id="name-child"
+          name="name-child"
+          required="true"
+          class="form-input"
+        />
         <br />
-        <p id="multiple-children">
-          If you have more than one child in need of tutoring, put both their
-          names in the box above, seperated by commas.
-        </p>
+        <label for="email">Your Email Address </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required="true"
+          class="form-input"
+        />
         <br />
-        <label for="email">Your Email Address</label>
-        <input type="email" id="email" name="email" required="true" />
+        <label for="number">Your Phone Number </label>
+        <input
+          type="tel"
+          id="number"
+          name="number"
+          required="true"
+          class="form-input"
+        />
         <br />
-        <label for="number">Your Phone Number</label>
-        <input type="tel" id="number" name="number" required="true" />
-        <br />
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset Form" />
+        <input type="submit" value="Submit" class="form-button" />
       </form>
+      <hr />
     </section>
-    <footer id="contact-us">
+    <footer>
       <h3>Contact us</h3>
-      <div>
+      <div id="contact-us-div">
         <h5>Like to speak to a representative? Want to find out more?</h5>
-        <span>
-          <p>Call us on 0330 457 2873</p>
-          <p>Email us at enquiries@tutoringjoy.co.uk</p>
-        </span>
+        <p>Call us on 0330 457 2873</p>
+        <p>
+          Email us at
+          <a href="mailto:enquiries@tutoringjoy.co.uk"
+            >enquiries@tutoringjoy.co.uk</a
+          >
+        </p>
       </div>
-      <br />
-      <div>
-        <h5>Or send us a letter in the post at the following address:</h5>
-        <p>Tutoring Joy</p>
-        <p>25 Endwhistle Street</p>
-        <p>Croydon CR0 3SL</p>
-      </div>
-      <br />
       <div>
         <h5>Check us out on social media</h5>
         <span>
