@@ -5,7 +5,7 @@ Tutoring Joy is a (fictitious) company that offers tutoring services to parents 
 ![Tutoring Joy on Different Screens](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/screenshots-of-all.png)
 
 # Features
-[](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/screenshot-1.png)
+![](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/screenshot-1.png)
 ## Header, Navigation and Sections
 In the above screenshot, there is a header with a the company name Tutoring Joy, as well as a logo, which I created myself. I have used responsive design in such a way that on larger screens the logo is on the same line with the company name and the tagline, and on smaller screens the logo is on top, with the rest below it.
 
@@ -15,7 +15,7 @@ I have used Semantic HTML to design the different sections of the page. I have a
 
 The two images that are used in this website are not mine. I got them from the free image resource [Pexels](www.pexels.com). The first image was gotten from [here](https://www.pexels.com/photo/black-teacher-explaining-presentation-to-diverse-elementary-pupils-5905440/) and the second from [here](https://www.pexels.com/photo/teacher-scolding-her-students-6936074/). This has also been referenced in the relevant HTML code.
 
-[](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/screenshot-3.png)
+![](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/screenshot-3.png)
 ## Sign Up and Contact Us
 In the above screenshot, there is a form in which the parent can sign up their child for a tutoring package. This would prompt the members of staff at Tutoring Joy to contact the parent to give them more information regarding tutoring for their child. I have used form validation to ensure that no important data is missed out. For the sake of functionality, I have used Code Institute's [FormDump](https://formdump.codeinstitute.net/), where the data sent is displayed back at you as a means to show that the form has been coded correctly.
 
@@ -46,7 +46,7 @@ I have tested the HTML code with W3C Validator testing and there are no errors w
 I have tested the CSS code with W3C Jigsaw testing and there are no errors with my code.
 
 I have tested my site's accesibility with Chrome's Lighthouse and have been given an overall score of 99%.
-[](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/lighthouse-report.png)
+![](https://github.com/immanueligwe151/tutoring-joy/blob/main/assets/images/lighthouse-report.png)
 
 # Deployment
 The site was deployed with GitHub pages. In the repository of this code on GitHub, the main branch was selected, and then a link was automatically generated for the website.
