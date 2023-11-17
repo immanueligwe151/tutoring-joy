@@ -37,3 +37,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+#Tutoring Joy
+
+Tutoring Joy is a (fictitious) company that offers tutoring services to parents wanting the extra support for their children. This website has been created as a first point of contact for any parent who was to look up various tutoring options, and is meant to be a basic representation of what a fully-fledged website for such a company could look like.
