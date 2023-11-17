@@ -1,43 +1,52 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tutoring Joy
 
-Welcome,
+Tutoring Joy is a (fictitious) company that offers tutoring services to parents wanting the extra support for their children. This website has been created as a first point of contact for any parent who was to look up various tutoring options, and is meant to be a basic representation of what a fully-fledged website for such a company could look like. I have used a variety of tools, encomprising HTML and CSS to create this website.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Tutoring Joy on Different Screens](assets/images/screenshots-of-all.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Features
+[](assets/images/screenshot-1.png)
+## Header, Navigation and Sections
+In the above screenshot, there is a header with a the company name Tutoring Joy, as well as a logo, which I created myself. I have used responsive design in such a way that on larger screens the logo is on the same line with the company name and the tagline, and on smaller screens the logo is on top, with the rest below it.
 
-## Codeanywhere Reminders
+The Navigation Bar consists of links to the 4 sections of the page: About Us, Our Packages, Sign Up and Contact Us. These links have been designed to take you to the relevant part of the page.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+I have used Semantic HTML to design the different sections of the page. I have also utilized Flexbox CSS in designing the layout of the sections. The About Us and Our Packages sections follow the same pattern, where there's some text to the side outlining that section, and a supplementary image as well. Using responsive design, I've made it so that on larger screens the images are on one side of the screen, and the text on the opposite side, and for smaller screens the image is stacked on top of the relevant text. I've also made the position of the images and text alternate for each section (for larger screens).
 
-`python3 -m http.server`
+The two images that are used in this website are not mine. I got them from the free image resource [Pexels](www.pexels.com). The first image was gotten from [here](https://www.pexels.com/photo/black-teacher-explaining-presentation-to-diverse-elementary-pupils-5905440/) and the second from [here](https://www.pexels.com/photo/teacher-scolding-her-students-6936074/). This has also been referenced in the relevant HTML code.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+[](assets/images/screenshot-3.png)
+## Sign Up and Contact Us
+In the above screenshot, there is a form in which the parent can sign up their child for a tutoring package. This would prompt the members of staff at Tutoring Joy to contact the parent to give them more information regarding tutoring for their child. I have used form validation to ensure that no important data is missed out. For the sake of functionality, I have used Code Institute's [FormDump](https://formdump.codeinstitute.net/), where the data sent is displayed back at you as a means to show that the form has been coded correctly.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+And then on the bottom of the page, there are various options displayed as means of contact. A phone number, email and social media handles have been provided. For the social media icons displayed on the bottom of the page, I had done some research and got my code from [W3Schools](https://www.w3schools.com/howto/howto_css_social_media_buttons.asp), which I have referenced in their respective places.
 
-`http_server`
+# Testing
+I have tested this website using Google Chrome and Microsoft Edge on my Windows PC, adjusting the window size and seeing its outlook on different screen sizes. I have also tested it on my personal mobile device.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+I have tested and confirmed that all the links are working, and all the external links open in new tabs.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+I have tested and confirmed that the form is working, and that data is sent on correctly.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+I have tested and confirmed that all text is easy to read.
 
-To log into the Heroku toolbelt CLI:
+# Bugs
+Whilst writing this README document I found that I had omitted one of my HTML id attributes, which made the site not work properly. I hence went to put it back
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Whilst coding the form, I forgot to add the POST method and the action URL, which led to the form not working, hence I had to add those after finding that out
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The responsive design for the form isn't 100% good and it might still mess up a bit on smaller screens
 
----
+The Contact Us section could be a bit more compact as there seems to be too much whitespace between elements
 
-Happy coding!
 
-#Tutoring Joy
+# Validator Testing
+I have tested the HTML code with W3C Validator testing and there are no errors with my code. Except with the warning of my self-closing tags ending with </>, which is attributed to Codeanywhere automatically putting that when the file is saved.
 
-Tutoring Joy is a (fictitious) company that offers tutoring services to parents wanting the extra support for their children. This website has been created as a first point of contact for any parent who was to look up various tutoring options, and is meant to be a basic representation of what a fully-fledged website for such a company could look like.
+I have tested the CSS code with W3C Jigsaw testing and there are no errors with my code.
+
+I have tested my site's accesibility with Chrome's Lighthouse and have been given an overall score of 99%.
+[](assets/images/lighthouse-report.png)
+
+# Deployment
+The site was deployed with GitHub pages. In the repository of this code on GitHub, the main branch was selected, and then a link was automatically generated for the website.
